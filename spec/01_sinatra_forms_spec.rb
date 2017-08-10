@@ -4,11 +4,11 @@ describe "FormsLab::App" do
       get '/'
     end
 
-    it "returns a 200 status code" do
+    it "returns a 200 status code " do
       expect(last_response.status).to eq(200)
     end
 
-    it "renders the instructions" do
+    it "renders the instructions " do
       expect(last_response.body).to include("Welcome to the Nested Forms Lab!")
       expect(last_response.body).to include("let's navigate to the '/new'")
     end
